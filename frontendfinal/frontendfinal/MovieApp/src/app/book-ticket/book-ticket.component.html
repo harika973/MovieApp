@@ -1,0 +1,65 @@
+
+
+<mat-card class="card-demo">
+    <mat-card-header>
+      <mat-card-title>Book Tickets</mat-card-title><br><br>
+    </mat-card-header>
+  
+  <mat-card-content>
+  <form class="example-form" #ticketForm="ngForm" (ngSubmit)="bookTicket()" novalidate fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+    
+
+        <mat-label>Movie Id:</mat-label>
+        <mat-label name="movieId">{{movie.movieId}}</mat-label>
+        <br>
+        <br>
+        <mat-label>Movie Name: </mat-label>
+        <mat-label name="movieName">{{movie.movieName}}</mat-label>   
+        <br>
+        <br>
+        <mat-label>Theatre Name: </mat-label>
+        <mat-label name="theatreName">{{movie.theatreName}}</mat-label>   
+         <br>
+         <br>
+         <mat-label>Total Seats:</mat-label>
+         <mat-label name="totalSeats">{{movie.totalSeats}}</mat-label>
+         <br>
+         <br>
+         <mat-label>Available Seats</mat-label>
+         <mat-label name="availableSeats">{{movie.availableSeats}}</mat-label>
+         <br>
+         <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Enter No of seats</mat-label>
+        <input matInput [(ngModel)]="ticket.numberOfSeats" name="movieId" required>    
+        <mat-error>NumberofSeats is Required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Enter Seat Number</mat-label>
+        <input matInput [(ngModel)]="ticket.seatNumber" name="movieId" required>    
+        <mat-error>SeatNumber is Required</mat-error>
+      </mat-form-field>
+      
+    
+      <mat-card-actions align="end">  
+        <button mat-button mat-dialog-close>close</button>
+      <button mat-raised-button mat-dialog-close color="primary" (click)="bookTicket()" >BOOK</button>
+    </mat-card-actions>  
+  </form>
+  </mat-card-content>
+  </mat-card>
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,86 @@
+
+
+<br>
+<br>
+<div class="container">
+    <mat-card>
+    
+        <mat-card-title class="title"> ADD MOVIE</mat-card-title>
+        <br>
+        <br>
+        <mat-card-content>
+        <mat-form-field class="example-full-width">
+            <mat-label>Enter Movie Id</mat-label>
+            <input matInput  type="number" placeholder="Enter Movie ID" name="movieId" [(ngModel)]="movie.movieId" required><br>
+            <mat-error>MovieId is Required</mat-error>
+        </mat-form-field>
+    
+    <br>
+    <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Movie Name:</mat-label>
+            <input matInput type="text" placeholder="Enter Movie name" name="movieName" [(ngModel)]="movie.movieName" required><br>
+            <mat-error>Moviename is Required</mat-error>
+        </mat-form-field>
+    
+    <br>
+    <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Theatre Name:</mat-label>
+            <input matInput type="text" placeholder="Enter Theatre Name" name="theatreName" [(ngModel)]="movie.theatreName" required><br>
+            <mat-error>TheatreName is Required</mat-error>
+        </mat-form-field>
+   
+    <br>
+    <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Total Seats:</mat-label>
+            <input matInput type="number" placeholder="Enter Total Seats" name="totalSeats" [(ngModel)]="movie.totalSeats" required><br>
+            <mat-error>TotalSeats is Required</mat-error>
+        </mat-form-field>
+    <br>
+    
+        <div class="container-fluid-padding">
+           
+        
+            <ng-container matColumnDef="action" >
+                <button mat-raised-button color="accent" class="custom-button" (click)="addMovie()">ADD</button>
+            </ng-container>
+            
+       
+            <ng-container matColumnDef="action">
+              <button mat-raised-button color="primary" (click)="view()">Close</button>
+             </ng-container>
+        
+    </div>
+   
+</mat-card-content>
+</mat-card>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

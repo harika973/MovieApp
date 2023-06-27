@@ -1,0 +1,44 @@
+mat-form-field{
+    display: block;
+    color: blue;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ticket{
+    background-color: rgb(222, 214, 221);
+}
+
+.custom-card-title{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: rgb(184, 21, 143);
+}
+
+.mat-elevation-z8{
+    display: flexbox;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+table{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    
+}
+
+mat-card{
+    margin:0px;
+    height:100%;
+    width:100%;
+    background:url('../../assets/images/nature.jpeg')no-repeat center center fixed; 
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+}

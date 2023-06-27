@@ -1,0 +1,26 @@
+
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <!-- <button mat-icon-button class="custom-button">
+        <mat-icon>home</mat-icon>
+      </button> -->
+      <div class="icon">
+        <mat-icon [inline]="true">home</mat-icon>
+      </div>
+      <h1 style="padding-right:30px;">MOVIE-BOOKING-APP</h1>
+      
+      <span class="menu-spacer"></span>
+      <div >
+        <a mat-button [routerLink]="'/homeadmin'" style="font-size:18px;">VIEW MOVIES</a>
+        <a mat-button [routerLink]="'/addmovie'"  style="font-size:18px;">ADD MOVIE</a>
+        
+      </div>
+      <span class="flexExpand">
+    <div >
+        <a mat-button (click)="logout()" style="padding-left:190px;"> LOGOUT </a>
+    </div>
+  </span>
+   
+    </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,31 @@
+mat-form-field{
+    display: block;
+}
+
+
+mat-card-content {
+    display: block;
+    justify-content: center;
+    padding-top: 20px;
+    color: black;
+}
+mat-card{
+    /* background-color: rgb(216, 139, 175); */
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin:0px;
+    height:100%;
+    width:100%;
+    background:url('../../assets/images/register1.jpeg')no-repeat center center fixed; 
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+}
+.title{
+    justify-content: center;
+    text-align: center;
+    color: darkblue;
+    
+}

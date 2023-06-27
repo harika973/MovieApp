@@ -1,0 +1,116 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <h1  class ="main"  style="color:rgb(231, 80, 72); ">MOVIE BOOKING APPLICATION</h1>
+    <br>
+    
+<mat-card class="box">
+    
+        <mat-card-title >LOGIN FORM</mat-card-title>
+        <br><br>
+        <mat-card-content>
+        <form #loginForm="ngForm" (ngSubmit)="loginUser()">
+            
+            <h3><p style="color: red;">{{msg}}</p></h3>
+            <mat-form-field class="example-full-width">
+                <mat-label>User Name</mat-label>
+                
+                <input type="text" placeholder="Enter Username" matInput [(ngModel)]="user.username" name="username" required>   
+                <mat-icon matPrefix>account_circle</mat-icon>
+                <mat-error>Username is Required Field</mat-error> 
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="user.password" name="password" required>  
+                <mat-icon matPrefix>lock_outline</mat-icon>
+                <button matTextSuffix mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" type="button">
+                    <mat-icon>{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                  </button>
+                <mat-error>Password is Required Field</mat-error>
+                
+            </mat-form-field>
+
+            <br>
+            <div class="col">
+                <h4><a href="forgot" style="color:rgb(226, 43, 223);">Forgot password?</a></h4>
+                <br>
+                <h5>
+                <!-- <mat-card-actions align="end">   -->
+                    <button mat-raised-button color="primary" class="button" (click)="loginUser()" >Login</button>
+                <!-- </mat-card-actions> -->
+            </h5>
+            <br>
+            </div>
+            <h4><p class="text-center">New User? <a routerLink="/register"
+                class="fw-bold text-body"><u style="color:rgb(190, 63, 177);">SignUp</u></a></p></h4>
+            
+        </form>
+    </mat-card-content>
+    
+</mat-card>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="example-card">
+        <br>
+        <h1 style="color:black; ">MOVIE BOOKING APPLICATION</h1>
+        <br>
+        <img mat-card-image src="../../assets/images/movie.jpeg" alt="Movie Photo" style="height: 280px;">
+        
+      </mat-card>
+    
+    <mat-card class="box">
+        <mat-card-header class="title">
+            <mat-card-title style="font-size: 24px;">LOGIN</mat-card-title>
+        </mat-card-header>
+        
+            <form #loginForm="ngForm" (ngSubmit)="loginUser()">
+                <mat-card-content>
+                <h3><p style="color: red;">{{msg}}</p></h3>
+                <mat-form-field class="example-full-width">
+                    <mat-label>User Name</mat-label>
+                    
+                    <input type="text" placeholder="Enter Username" matInput [(ngModel)]="user.username" name="username" required>   
+                    <mat-icon matPrefix>account_circle</mat-icon>
+                    <mat-error>Username is Required Field</mat-error> 
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="user.password" name="password" required>  
+                    <mat-icon matPrefix>lock_outline</mat-icon>
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" type="button">
+                        <mat-icon>{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                      </button>
+                    <mat-error>Password is Required Field</mat-error>
+                    
+                </mat-form-field>
+
+                <br>
+                <div class="col">
+                    <h5><a href="forgot">Forgot password?</a></h5>
+                    <h5>
+                    <mat-card-actions align="end">  
+                        <button mat-raised-button color="primary" class="example-full-width" (click)="loginUser()" >Login</button>
+                    </mat-card-actions>
+                </h5>
+                </div>
+                <h4><p class="text-center">New User? <a routerLink="/register"
+                    class="fw-bold text-body"><u style="color:rgb(63, 111, 190);">SignUp</u></a></p></h4>
+                </mat-card-content>
+            </form>
+        
+    </mat-card>
+
+</div> -->

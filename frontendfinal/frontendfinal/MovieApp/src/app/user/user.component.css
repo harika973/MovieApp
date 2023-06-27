@@ -1,0 +1,17 @@
+
+.mat-elevation-z8{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url(../../assets/images/cinemahall.jpeg);
+}
+.container{
+    display: inline-block;
+    
+}
+
+
+.flex{
+    padding-left: 50px;
+}

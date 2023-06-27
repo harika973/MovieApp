@@ -1,0 +1,70 @@
+
+
+
+
+
+<br>
+<br>
+<div class="container">
+    <mat-card>
+    
+        <br>
+        <br>
+        <mat-card-title class="title">UPDATE MOVIE</mat-card-title>
+        <br>
+        <br>
+        <mat-card-content>
+           
+        <mat-form-field class="example-full-width">
+            <mat-label>Enter Movie Id</mat-label>
+            <input matInput  type="number" placeholder="Enter Movie ID" name="movieId" [(ngModel)]="movie.movieId" readonly><br>
+        </mat-form-field>
+    
+    <br>
+    <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Movie Name:</mat-label>
+            <input matInput type="text" placeholder="Enter Movie name" name="movieName" [(ngModel)]="movie.movieName" ><br>
+        </mat-form-field>
+    
+    <br>
+    <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Theatre Name:</mat-label>
+            <input matInput type="text" placeholder="Enter Theatre Name" name="theatreName" [(ngModel)]="movie.theatreName" ><br>
+        </mat-form-field>
+   
+    <br>
+    <br>
+    <h6 style="color:red">{{msg}}</h6>
+        <mat-form-field class="example-full-width">
+            <mat-label>Available Seats:</mat-label>
+            <input matInput type="number" placeholder="Enter Available Seats" name="availableSeats" [(ngModel)]="movie.availableSeats" required><br>
+            
+        </mat-form-field>
+    <br>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Total Seats:</mat-label>
+        <input matInput type="number" placeholder="Enter Total Seats" name="totalSeats" [(ngModel)]="movie.totalSeats" readonly><br>
+        
+    </mat-form-field>
+    <br>
+    <!-- <mat-action-row> -->
+        
+        <!-- <div class="demo-button-container"> -->
+            <ng-container matColumnDef="action">
+                <button mat-raised-button color="accent" class="custom-button" (click)="updateMovie()">Update</button>
+            </ng-container>
+        <!-- </div>
+        <div class="demo-button"> -->
+            <ng-container matColumnDef="action">
+              <button mat-raised-button color="primary" (click)="view()">Close</button>
+             </ng-container>
+        <!-- </div> -->
+    <!-- </mat-action-row> -->
+</mat-card-content>
+</mat-card>
+</div>
+
+

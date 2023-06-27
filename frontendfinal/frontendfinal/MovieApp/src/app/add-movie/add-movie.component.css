@@ -1,0 +1,45 @@
+mat-form-field{
+    display: block;
+    color: blue;
+}
+
+
+#main-panel{
+    display: inline;
+}
+
+.example-full-width{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+mat-card-title{
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+mat-card{
+    padding-top: 80px;
+    /* background-color: thistle; */
+    margin:0px;
+    height:100%;
+    width:100%;
+    background:url('../../assets/images/simple.jpeg')no-repeat center center fixed; 
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+}
+
+.custom-button{
+    margin-right: 1100px;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(200, 60, 146);
+}
